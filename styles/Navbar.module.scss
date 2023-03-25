@@ -3,65 +3,87 @@
   color: #ffffff;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.navbarLogo {
+.logoDiv {
+  width: 20%;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
+  justify-content: flex-start;
 }
 
-.navbarLinks {
+.linkDiv {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 40%;
+}
+
+.link {
+  font-size: 1.2em;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.btnDiv {
+  width: 20%;
+  display: flex;
   align-items: center;
-  list-style: none;
+  justify-content: flex-end;
 }
 
-.navbarItem {
-  margin: 0 1rem;
+.humbergDiv {
+  display: none;
 }
 
-.navbarLink {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
+
+/*
+media query for tab
+*/
+@media screen and (max-width: 1024px) {
+  .linkDiv {
+    width: 60%;
+  }
+
+  .btnDiv,
+  .logoDiv {
+    width: 18%;
+  }
+
 }
 
-.navbarLink:hover {
-  color: #1DA1F2;
+
+/*
+media query for mobile
+*/
+@media screen and (max-width: 600px) {
+
+  .humbergDiv {
+    display: contents;
+    font-size: 2.5em;
+    width: 10%;
+  }
+
+.logoDiv{
+  width: 60%;
 }
 
-.button {
-  background-color: #ffffff;
-  color: #1DA1F2;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
+  .navbar{
+    justify-content: space-around;
+  }
 
-.button:hover {
-  background-color: #1DA1F2;
-  color: #ffffff;
+  .btnDiv,
+  .linkDiv {
+    display: none;
+  }
+
+
+
 }

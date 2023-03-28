@@ -66,7 +66,7 @@
   align-items: center;
 }
 
-.mobileMenu {
+.mobileMenu, .menuIcon {
   display: none;
 }
 
@@ -107,8 +107,8 @@
   }
 
   .menuIcon {
-    width: 45px;
-    height: 45px;
+   font-size: 1.5rem;
+    display: block;
   }
 
   .option {

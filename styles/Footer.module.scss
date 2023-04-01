@@ -41,3 +41,21 @@
     margin-top: 10px;
 }
 
+.searchDiv{
+    margin-top: 10px;
+}
+
+.socialDiv{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socialIcon{
+    margin-top: 15px;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.socialIcon:hover{
+    color: #69c0ff;
+}

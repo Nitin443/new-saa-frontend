@@ -1,8 +1,17 @@
-import { Image } from "antd";
+import { Image, Input } from "antd";
 import styles from "../../../styles/Footer.module.scss";
-import { FaEnvelope, FaPhone, FaAddressBook } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaAddressBook,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+  FaFacebook,
+} from "react-icons/fa";
 import Link from "next/link";
-import Search from "antd/es/transfer/search";
+
+const { Search } = Input;
 
 interface Props extends React.PropsWithChildren<any> {}
 
@@ -90,21 +99,29 @@ const Footer: React.FC<Props> = ({}) => {
         </div>
 
         <div>
-            <h4>Subscribe newsletter</h4>
+          <h4>Subscribe newsletter</h4>
 
-            <p className={styles.pNews} >Subscribe our newsletter to get updates about our new events and blogs</p>
+          <p className={styles.pNews}>
+            Subscribe our newsletter to get updates about our new events and
+            blogs
+          </p>
 
-            <div>
+          <div className={styles.searchDiv}>
             <Search
-      placeholder="input search text"
-      //allowClear
-     // enterButton="Search"
-//size="large"
-    //  onSearch={onSearch}
-    />
+              placeholder="input search text"
+              allowClear
+              enterButton="Subscribe"
+              size="large"
+              //  onSearch={onSearch}
+            />
+          </div>
 
-            </div>
-
+          <div className={styles.socialDiv}>
+            <FaFacebook className={styles.socialIcon} />{" "}
+            <FaTwitter className={styles.socialIcon} />{" "}
+            <FaLinkedin className={styles.socialIcon} />{" "}
+            <FaInstagram className={styles.socialIcon} />
+          </div>
         </div>
       </div>
     </div>

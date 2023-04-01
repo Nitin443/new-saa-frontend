@@ -18,7 +18,10 @@ const Navbar = () => {
           </a>
         </div>
 
-        <ul className={click ? `${styles.navOptions} ${styles.active}` : `${styles.navOptions}`}>
+        
+      </div>
+
+      <ul className={click ? `${styles.navOptions} ${styles.active}` : `${styles.navOptions}`}>
           <li className={styles.option} onClick={closeMobileMenu}>
             <a href="#">ABOUT</a>
           </li>
@@ -37,7 +40,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
+
       <ul className={styles.signinUp}>
         <li className={styles.signIn} onClick={closeMobileMenu}>
           <a href="#">SIGN-IN</a>
@@ -50,7 +53,7 @@ const Navbar = () => {
       </ul>
       <div className={styles.mobileMenu} onClick={handleClick}>
 
-        <MenuOutlined className={styles.menuIcon} />
+        <MenuOutlined  />
 
       </div>
     </div>

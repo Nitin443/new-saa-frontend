@@ -66,7 +66,7 @@
   align-items: center;
 }
 
-.mobileMenu, .menuIcon {
+.mobileMenu {
   display: none;
 }
 
@@ -106,10 +106,7 @@
     padding-left: 0px;
   }
 
-  .menuIcon {
-   font-size: 1.5rem;
-    display: block;
-  }
+
 
   .option {
     display: flex;
@@ -132,8 +129,10 @@
   .signinUp {
     display: none;
   }
-}
 
-.mobileMenu {
-  display: block;
+  .mobileMenu {
+    display: block;
+    font-size: 1.5rem;
+  }
+
 }

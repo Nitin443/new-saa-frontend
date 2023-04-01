@@ -23,13 +23,13 @@ const Navbar = () => {
 
       <ul className={click ? `${styles.navOptions} ${styles.active}` : `${styles.navOptions}`}>
           <li className={styles.option} onClick={closeMobileMenu}>
-            <a href="#">ABOUT</a>
+            <a href="#">EVENTS</a>
           </li>
           <li className={styles.option} onClick={closeMobileMenu}>
-            <a href="#">CONTACT</a>
+            <a href="#">CONNECT</a>
           </li>
           <li className={styles.option} onClick={closeMobileMenu}>
-            <a href="#">BLOG</a>
+            <a href="#">ROADMAPS</a>
           </li>
           <li className={`${styles.option} ${styles.mobileOption}`} onClick={closeMobileMenu}>
             <a href="#">SIGN-IN</a>

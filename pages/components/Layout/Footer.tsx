@@ -128,6 +128,9 @@ const Footer: React.FC<Props> = ({}) => {
           </div>
         </div>
       </div>
+
+     <div className={styles.bottomDiv} > All Rights Reserved by <span className={styles.tpsowName} > Tpsow Intech Pvt Ltd </span>  </div>
+
     </div>
   );
 };

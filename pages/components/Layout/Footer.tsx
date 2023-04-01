@@ -19,7 +19,7 @@ const Footer: React.FC<Props> = ({}) => {
   return (
     <div className={styles.mainDiv}>
       <div className={styles.subTopDiv}>
-        <div>
+        <div className={styles.firstDiv} >
           <div className={styles.logoDiv}>
             <a href="#">
               <Image
@@ -60,6 +60,8 @@ const Footer: React.FC<Props> = ({}) => {
           </div>
         </div>
 
+        <div className={styles.secondDiv} >
+
         <div>
           <h4>Navigation</h4>
 
@@ -98,7 +100,9 @@ const Footer: React.FC<Props> = ({}) => {
           </Link>
         </div>
 
-        <div>
+        </div>
+
+        <div className={styles.thirdDiv} >
           <h4>Subscribe newsletter</h4>
 
           <p className={styles.pNews}>

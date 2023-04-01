@@ -10,10 +10,25 @@
     justify-content: space-evenly;
 }
 
+.firstDiv{
+    width: 30%;
+}
+
+.secondDiv{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.thirdDiv{
+    width: 30%;
+}
+
 .logoDiv {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: -20px;
 }
 
 .name {

@@ -1,7 +1,9 @@
+@import './common/_color.module.scss';
+
 .mainDiv {
     width: 100%;
     min-height: 50px;
-    background-color: #eeeeee;
+    background-color: $primaryBgColor;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 60px;
@@ -52,7 +54,7 @@
 }
 
 .email:hover{
-  color: #1890ff;
+  color: $terceryTextColor;
   cursor: pointer;
 }
 
@@ -76,7 +78,7 @@
 }
 
 .socialIcon:hover{
-    color: #1890ff;
+    color: $terceryTextColor;
 }
 
 .bottomDiv{
@@ -87,7 +89,7 @@
 }
 
 .tpsowName{
-    color: #1890ff;
+    color: $terceryTextColor;
 }
 
 

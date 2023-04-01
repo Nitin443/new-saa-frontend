@@ -8,6 +8,7 @@
 .subTopDiv {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .firstDiv{
@@ -21,7 +22,7 @@
 }
 
 .thirdDiv{
-    width: 30%;
+    width: 30%
 }
 
 .logoDiv {
@@ -74,3 +75,21 @@
 .socialIcon:hover{
     color: #69c0ff;
 }
+
+
+@media screen and (max-width: 709px) {
+    .subTopDiv {
+        flex-direction: column;
+    }
+
+    .firstDiv, .secondDiv, .thirdDiv{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .secondDiv{
+        justify-content: space-around;
+    }
+
+  }
+

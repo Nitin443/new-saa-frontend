@@ -1,6 +1,8 @@
 import { Image } from "antd";
 import styles from "../../../styles/Footer.module.scss";
 import { FaEnvelope, FaPhone, FaAddressBook } from "react-icons/fa";
+import Link from "next/link";
+import Search from "antd/es/transfer/search";
 
 interface Props extends React.PropsWithChildren<any> {}
 
@@ -22,7 +24,7 @@ const Footer: React.FC<Props> = ({}) => {
           <p>
             {" "}
             SAA is a Student Awaereness Application. We want to change stundent
-            environment. This is our mission to change world education syestem.{" "}
+            environment. This is our mission to change world education system.{" "}
           </p>
 
           <div className={styles.emailDiv}>
@@ -49,11 +51,61 @@ const Footer: React.FC<Props> = ({}) => {
           </div>
         </div>
 
-        <div>seriv</div>
+        <div>
+          <h4>Navigation</h4>
 
-        <div>logo</div>
+          <Link className={styles.emailDiv} href="#">
+            {" "}
+            Home{" "}
+          </Link>
 
-        <div>logo</div>
+          <Link className={styles.emailDiv} href="#">
+            {" "}
+            About{" "}
+          </Link>
+
+          <Link className={styles.emailDiv} href="#">
+            {" "}
+            Sitemap{" "}
+          </Link>
+        </div>
+
+        <div>
+          <h4>For you</h4>
+
+          <Link className={styles.emailDiv} href="#">
+            {" "}
+            Events{" "}
+          </Link>
+
+          <Link className={styles.emailDiv} href="#">
+            {" "}
+            Connect{" "}
+          </Link>
+
+          <Link className={styles.emailDiv} href="#">
+            {" "}
+            Roadmaps{" "}
+          </Link>
+        </div>
+
+        <div>
+            <h4>Subscribe newsletter</h4>
+
+            <p className={styles.pNews} >Subscribe our newsletter to get updates about our new events and blogs</p>
+
+            <div>
+            <Search
+      placeholder="input search text"
+      //allowClear
+     // enterButton="Search"
+//size="large"
+    //  onSearch={onSearch}
+    />
+
+            </div>
+
+        </div>
       </div>
     </div>
   );

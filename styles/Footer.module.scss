@@ -1,5 +1,7 @@
 @import './common/_color.module.scss';
 
+$linkFont: bold;
+
 .mainDiv {
     width: 100%;
     min-height: 50px;
@@ -47,6 +49,10 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 10px;
+}
+
+.emailDiv:hover{
+    color: $terceryTextColor
 }
 
 .email{

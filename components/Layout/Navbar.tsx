@@ -1,7 +1,7 @@
 import { MenuOutlined, } from "@ant-design/icons";
 import { Image } from "antd";
 import { useState } from "react";
-import styles from "../../../styles/Navbar.module.scss";
+import styles from "../../styles/Navbar.module.scss";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);

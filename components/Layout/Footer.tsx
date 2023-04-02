@@ -1,5 +1,5 @@
 import { Image, Input } from "antd";
-import styles from "../../../styles/Footer.module.scss";
+import styles from "../../styles/Footer.module.scss";
 import {
   FaEnvelope,
   FaPhone,
@@ -67,7 +67,7 @@ const Footer: React.FC<Props> = ({}) => {
 
           <Link className={styles.emailDiv} href="#">
             {" "}
-            Home{" "}
+           <span> Home{" "}  </span>
           </Link>
 
           <Link className={styles.emailDiv} href="#">

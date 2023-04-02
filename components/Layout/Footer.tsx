@@ -30,7 +30,7 @@ const Footer: React.FC<Props> = ({}) => {
             <span className={styles.name}>SAA</span>
           </div>
 
-          <p>
+          <p >
             {" "}
             SAA is a Student Awaereness Application. We want to change stundent
             environment. This is our mission to change world education system.{" "}
@@ -129,7 +129,7 @@ const Footer: React.FC<Props> = ({}) => {
         </div>
       </div>
 
-     <div className={styles.bottomDiv} > All Rights Reserved by <span className={styles.tpsowName} > Tpsow Intech Pvt Ltd </span>  </div>
+     <div className={styles.bottomDiv} > Copyright &#169;  {new Date().getFullYear()} & All Rights Reserved by <span className={styles.tpsowName} > Tpsow Intech Pvt Ltd </span>  </div>
 
     </div>
   );

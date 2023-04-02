@@ -8,7 +8,7 @@ const Layout: React.FC<Props> = ({ children }) => {
     return (
         <>
             <Navbar />
-            <div style={{backgroundColor: "gray", marginBottom: "50px", width: "100%", height: "50px"}} ></div>
+           {children}
             <Footer />
         </>
     );

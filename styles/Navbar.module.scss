@@ -1,8 +1,10 @@
+@import "./common/_color.module.scss";
+
 /*Desktop View*/
 .header {
   display: flex;
- // background: linear-gradient(#6616fc, #f394d3);
- background-color: #1890ff;
+  // background: linear-gradient(#6616fc, #f394d3);
+  background-color: $primaryBgColor;
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
@@ -39,7 +41,7 @@
 }
 
 .option :hover {
-  color: white;
+  color: $terceryTextColor;
 }
 
 .signinUp {
@@ -54,20 +56,20 @@
 }
 
 .signIn :hover {
-  color: white;
+  color: $terceryTextColor;
 }
 
 .signupBtn {
   padding: 10px 10px;
   height: 2.4rem;
   border-radius: 3px;
-  background: #595959;
+  background: $primaryBtnColor;
   color: white;
   cursor: pointer;
   align-items: center;
 }
 
-.signupBtn:hover{
+.signupBtn:hover {
   opacity: 0.7;
 }
 
@@ -76,7 +78,6 @@
 }
 
 @media (max-width: 709px) {
-
   /*Mobile View */
   .header {
     padding: 0px 10px;
@@ -102,7 +103,7 @@
   }
 
   .navOptions.active {
-    background: #1890ff;
+    background: $primaryBgColor;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -110,8 +111,6 @@
     align-content: center;
     padding-left: 0px;
   }
-
-
 
   .option {
     display: flex;
@@ -139,5 +138,4 @@
     display: block;
     font-size: 1.5rem;
   }
-
 }

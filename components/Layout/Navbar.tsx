@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className={styles.logoNav}>
         <div className={styles.logoContainer}>
           <a href="#">
-            <Image preview={false} src="https://tpsowsaa.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgreen-logo.f704c8aa.png&w=96&q=75" />
+            <Image alt="logo" preview={false} src="https://tpsowsaa.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgreen-logo.f704c8aa.png&w=96&q=75" />
 
           </a>
         </div>

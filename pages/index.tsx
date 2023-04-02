@@ -3,7 +3,9 @@ import Layout from "../components/Layout/Layout";
 import Homes from "@/components/HomeContent/Homes";
 
 const Home: NextPage = () => {
-  return <Layout children={<Homes />} />;
+  return <Layout>
+    <Homes />
+  </Layout>;
 };
 
 export default Home;

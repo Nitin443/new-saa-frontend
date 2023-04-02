@@ -12,8 +12,8 @@ const TopBanner: React.FC<Props> = ({}) => {
         </h1>
 
         <p className={styles.pTag}>
-          Don't worry about Tier's of Colleges Now you can live & grow with top
-          People's.
+          Don&apos;t worry about Tier&apos;s of Colleges Now you can live & grow with top
+          People&apos;s.
         </p>
 
         <div className={styles.btnDiv}>

@@ -1,12 +1,11 @@
-import styles from "../../styles/HomeEventsBanner.module.scss";
+import styles from "../../styles/HomeRoadmapsBanner.module.scss";
 import { Button, Image } from "antd";
 
 interface Props extends React.PropsWithChildren<any> {}
 
-const HomeEventsBanner: React.FC<Props> = ({}) => {
+const HomeRoadmapsBanner: React.FC<Props> = ({}) => {
   return (
     <div className={styles.mainDiv}>
-
       <div className={styles.rightDiv}>
         <Image
           preview={false}
@@ -17,21 +16,20 @@ const HomeEventsBanner: React.FC<Props> = ({}) => {
 
       <div className={styles.leftDiv}>
         <h1 className={styles.h1Tag}>
-          Join Events accross the world and get knowledge of different areas
+          Explore our roadmaps for taking better decision of your career
         </h1>
 
         <p className={styles.pTag}>
-          You can join events from anywhere and can enjoy knowledge and informations of events from top mentores and universities.
+          You can explore and look up into our available roadmaps for career
+          decision. Our career roadmaps will help you in better carerr desicion.
         </p>
 
         <div className={styles.btnDiv}>
-          <Button className={styles.btn}>Join Events </Button>
-
-          
+          <Button className={styles.btn}>Explore Roadmaps </Button>
         </div>
       </div>
     </div>
   );
 };
 
-export default HomeEventsBanner;
+export default HomeRoadmapsBanner;

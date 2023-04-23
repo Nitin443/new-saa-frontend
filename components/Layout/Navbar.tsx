@@ -1,4 +1,4 @@
-import { MenuOutlined, } from "@ant-design/icons";
+import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
 import { Image } from "antd";
 import { useState } from "react";
 import styles from "../../styles/Navbar.module.scss";
@@ -13,33 +13,46 @@ const Navbar = () => {
       <div className={styles.logoNav}>
         <div className={styles.logoContainer}>
           <a href="#">
-            <Image alt="logo" preview={false} src="https://tpsowsaa.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgreen-logo.f704c8aa.png&w=96&q=75" />
-
+            <Image
+              alt="logo"
+              preview={false}
+              src="https://tpsowsaa.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgreen-logo.f704c8aa.png&w=96&q=75"
+            />
           </a>
         </div>
-
-        
       </div>
 
-      <ul className={click ? `${styles.navOptions} ${styles.active}` : `${styles.navOptions}`}>
-          <li className={styles.option} onClick={closeMobileMenu}>
-            <a href="#">EVENTS</a>
-          </li>
-          <li className={styles.option} onClick={closeMobileMenu}>
-            <a href="#">CONNECT</a>
-          </li>
-          <li className={styles.option} onClick={closeMobileMenu}>
-            <a href="#">ROADMAPS</a>
-          </li>
-          <li className={`${styles.option} ${styles.mobileOption}`} onClick={closeMobileMenu}>
-            <a href="#">SIGN-IN</a>
-          </li>
-          <li className={`${styles.option} ${styles.mobileOption}`} onClick={closeMobileMenu}>
-            <a href="" className="sign-up">
-              SIGN-UP
-            </a>
-          </li>
-        </ul>
+      <ul
+        className={
+          click
+            ? `${styles.navOptions} ${styles.active}`
+            : `${styles.navOptions}`
+        }
+      >
+        <li className={styles.option} onClick={closeMobileMenu}>
+          <a href="#">EVENTS</a>
+        </li>
+        <li className={styles.option} onClick={closeMobileMenu}>
+          <a href="#">CONNECT</a>
+        </li>
+        <li className={styles.option} onClick={closeMobileMenu}>
+          <a href="#">ROADMAPS</a>
+        </li>
+        <li
+          className={`${styles.option} ${styles.mobileOption}`}
+          onClick={closeMobileMenu}
+        >
+          <a href="#">SIGN-IN</a>
+        </li>
+        <li
+          className={`${styles.option} ${styles.mobileOption}`}
+          onClick={closeMobileMenu}
+        >
+          <a href="" className="sign-up">
+            SIGN-UP
+          </a>
+        </li>
+      </ul>
 
       <ul className={styles.signinUp}>
         <li className={styles.signIn} onClick={closeMobileMenu}>
@@ -52,13 +65,10 @@ const Navbar = () => {
         </li>
       </ul>
       <div className={styles.mobileMenu} onClick={handleClick}>
-
-        <MenuOutlined  />
-
+        {click ? <CloseOutlined /> : <MenuOutlined />}
       </div>
     </div>
   );
 };
 
 export default Navbar;
-

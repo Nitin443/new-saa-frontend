@@ -1,0 +1,102 @@
+@import "./common/_color.module.scss";
+
+.mainDiv {
+  width: 100%;
+  min-height: 200px;
+  background-color: $forthBgColor;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.h1Tag {
+  color: $primaryTextColor;
+  font-size: 3em;
+}
+
+.pTag {
+  color: $primaryTextColor;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: $terceryBtnColor;
+  border-style: none;
+  min-height: 50px;
+  color: $fifthtextColor;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+.btnStyle {
+  margin-top: 20px;
+  min-height: 50px;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+.btnDiv {
+  width: 100%;
+}
+
+.rightDiv {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*
+tab
+*/
+
+@media screen and (max-width: 1024px) {
+    .mainDiv {
+        width: 100%;
+        min-height: 200px;
+        background-color: $forthBgColor;
+        display: flex;
+        justify-content: center;
+        padding: 30px 5px 30px 5px;
+      }
+
+      .leftDiv, .rightDiv{
+        width: 48%;
+      }
+
+  }
+
+
+  /*
+mobile
+*/
+
+@media screen and (max-width: 709px) {
+    .mainDiv {
+        width: 100%;
+        min-height: 200px;
+        background-color: $forthBgColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 15px 30px 15px;
+      }
+
+
+      .leftDiv, .rightDiv{
+        width: 100%;
+      }
+     
+
+  }

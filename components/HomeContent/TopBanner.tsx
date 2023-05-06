@@ -25,6 +25,8 @@ const TopBanner: React.FC<Props> = ({}) => {
 
       <div className={styles.rightDiv}>
         <Image
+          width={500}
+          height={500}
           preview={false}
           alt="banner image"
           src="https://tpsowsaa.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner-img.733357c6.png&w=640&q=75"

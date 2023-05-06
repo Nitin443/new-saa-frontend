@@ -1,5 +1,6 @@
 import styles from "../../styles/HomeEventsBanner.module.scss";
 import { Button, Image } from "antd";
+import eventImage from "../../assets/images/event.png"
 
 interface Props extends React.PropsWithChildren<any> {}
 
@@ -9,9 +10,11 @@ const HomeEventsBanner: React.FC<Props> = ({}) => {
 
       <div className={styles.rightDiv}>
         <Image
+        width={400}
+        height={400}
           preview={false}
           alt="banner image"
-          src="https://tpsowsaa.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner-img.733357c6.png&w=640&q=75"
+          src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
         />
       </div>
 

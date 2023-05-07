@@ -1,1 +1,1 @@
-export const backendUrlAtom = atom<string>('')
+// export const backendUrlAtom = atom<string>('')

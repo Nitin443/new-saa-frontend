@@ -14,7 +14,6 @@ interface Props extends React.PropsWithChildren<any> {
 
 const MediumInfoCard: React.FC<Props> = ({}) => {
   return (
-    <div className={styles.mainDiv}>
       <Card
         hoverable={true}
         style={{ width: 300, height: 410 }}
@@ -51,7 +50,6 @@ const MediumInfoCard: React.FC<Props> = ({}) => {
           <Tag>Beginner</Tag> <Tag>Professional</Tag> <Tag>6 month</Tag>
         </div>
       </Card>
-    </div>
   );
 };
 

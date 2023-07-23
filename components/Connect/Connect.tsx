@@ -1,3 +1,4 @@
+import CardsSlidesWithTopic from "../Custom/CardsSlidesWithTopic";
 import TopBanner from "../HomeContent/TopBanner";
 
 interface Props extends React.PropsWithChildren<any> {}
@@ -6,7 +7,8 @@ const Connect: React.FC<Props> = ({}) => {
   return (
     <>
       <TopBanner />
-      <h1>Connect</h1>
+      <CardsSlidesWithTopic />
+      <CardsSlidesWithTopic />
     </>
   );
 };

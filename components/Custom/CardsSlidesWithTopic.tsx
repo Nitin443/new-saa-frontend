@@ -16,10 +16,10 @@ const CardsSlidesWithTopic: React.FC<Props> = ({}) => {
       <Title level={2}>Trending Events</Title>
 
       <div className={styles.cardMainDiv}>
-        <div className={styles.arrowDiv} >
+        {/* <div className={styles.arrowDiv} >
           {" "}
           <LeftOutlined />{" "}
-        </div>
+        </div> */}
         <div className={styles.cardContainer}>
           <MediumInfoCard />
 
@@ -28,12 +28,13 @@ const CardsSlidesWithTopic: React.FC<Props> = ({}) => {
           <MediumInfoCard />
 
           <MediumInfoCard />
+
         </div>
 
-        <div className={styles.arrowDiv} >
+        {/* <div className={styles.arrowDiv} >
           {" "}
           <RightOutlined />{" "}
-        </div>
+        </div> */}
       </div>
     </div>
   );

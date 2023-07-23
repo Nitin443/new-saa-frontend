@@ -22,7 +22,7 @@
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
-    // width: 100%;
+    width: 100%;
   }
 
   .arrowDiv{
@@ -31,4 +31,10 @@
     align-items: center;
     font-size: 1.5rem;
     font-weight: 200;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .cardContainer {
+        justify-content: space-evenly;
+      }
   }

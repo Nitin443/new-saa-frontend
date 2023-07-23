@@ -2,9 +2,13 @@
 
 
 .cardStyle{
+    max-width: 300px;
+    width: 100%;
+    max-height: 410px;
+    height: 100%;
     border-color: #eeee;
     border-width: 1.5px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .rateNum{
@@ -30,8 +34,3 @@
     list-style: circle;
 }
 
-@media (max-width: 600px) {
-    .cardStyle {
-      width: calc(50% - 20px); /* 50% minus the margin to fit 2 cards in a row */
-    }
-  }

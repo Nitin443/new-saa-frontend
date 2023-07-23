@@ -8,7 +8,7 @@ interface Props extends React.PropsWithChildren<any> {}
 const Homes: React.FC<Props> = ({}) => {
   return (
     <>
-      <TopBanner />
+      <TopBanner showBtn={true} />
       <HomeEventsBanner />
       <HomeConnectBanner />
       <HomeRoadmapsBanner />

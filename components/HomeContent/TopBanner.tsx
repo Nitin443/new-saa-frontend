@@ -1,26 +1,47 @@
 import styles from "../../styles/TopBanner.module.scss";
 import { Button, Image } from "antd";
 
-interface Props extends React.PropsWithChildren<any> {}
+interface Props extends React.PropsWithChildren<any> {
+  title?: string;
+  description?: string;
+  showBtn?: boolean;
+  backgroundColor?: string;
+  imageUrl?: string;
+}
 
-const TopBanner: React.FC<Props> = ({}) => {
+const TopBanner: React.FC<Props> = ({
+  title,
+  description,
+  showBtn,
+  backgroundColor,
+  imageUrl,
+}) => {
   return (
-    <div className={styles.mainDiv}>
+    <div
+      style={{ backgroundColor: `${backgroundColor}` }}
+      className={styles.mainDiv}
+    >
       <div className={styles.leftDiv}>
         <h1 className={styles.h1Tag}>
-          Build yourself with Top Mentors and Live in progressive Environment
+          {title ||
+            "Build yourself with Top Mentors and Live in progressive Environment"}
         </h1>
 
         <p className={styles.pTag}>
-          Don&apos;t worry about Tier&apos;s of Colleges Now you can live & grow with top
-          People&apos;s.
+          {description ||
+            `Don't worry about Tier's of Colleges. Now you can live & grow with top
+          People's.`}
         </p>
 
-        <div className={styles.btnDiv}>
-          <Button className={styles.btn}>Join us </Button>
+        {showBtn ? (
+          <div className={styles.btnDiv}>
+            <Button className={styles.btn}>Join us </Button>
 
-          <Button  className={styles.btnStyle} >Explore more </Button>
-        </div>
+            <Button className={styles.btnStyle}>Explore more </Button>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
 
       <div className={styles.rightDiv}>
@@ -29,7 +50,10 @@ const TopBanner: React.FC<Props> = ({}) => {
           height={500}
           preview={false}
           alt="banner image"
-          src="https://tpsowsaa.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner-img.733357c6.png&w=640&q=75"
+          src={
+            imageUrl ||
+            "https://tpsowsaa.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner-img.733357c6.png&w=640&q=75"
+          }
         />
       </div>
     </div>

@@ -18,7 +18,8 @@ const MediumInfoCard: React.FC<Props> = ({}) => {
       <Card
         hoverable={true}
         style={{ width: 300, height: 410 }}
-        bordered
+        className={styles.cardStyle}
+        bordered={true}
         cover={
           <img
             alt="example"

@@ -1,0 +1,32 @@
+@import "./common/_color.module.scss";
+
+.mainDiv{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rateNum{
+    font-weight: bold;
+}
+
+.ratingStyle{
+ color: $primaryThemeColor;
+ font-size: medium;
+}
+
+.ratingDiv{
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.reviewStyle{
+    color: $fourthTextColor;
+    opacity: 0.8;
+}
+
+.tagStyle{
+    list-style: circle;
+}

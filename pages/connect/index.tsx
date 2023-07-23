@@ -1,10 +1,11 @@
 import { NextPage } from "next";
 import Layout from "../../components/Layout/Layout";
+import Connect from "../../components/Connect/Connect";
 
-const Connect: NextPage = () => {
+const ConnectPage: NextPage = () => {
   return <Layout>
-    connect
+    <Connect />
   </Layout>;
 };
 
-export default Connect;
+export default ConnectPage;

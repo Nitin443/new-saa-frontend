@@ -1,10 +1,11 @@
 import { NextPage } from "next";
 import Layout from "../../components/Layout/Layout";
+import EventsCom from "../../components/Events/Events";
 
-const Events: NextPage = () => {
+const EventsPage: NextPage = () => {
   return <Layout>
-    Events
+    <EventsCom />
   </Layout>;
 };
 
-export default Events;
+export default EventsPage;

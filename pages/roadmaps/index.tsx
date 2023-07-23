@@ -1,10 +1,11 @@
 import { NextPage } from "next";
 import Layout from "../../components/Layout/Layout";
+import Roadmaps from "@/components/Roadmaps/Roadmaps";
 
-const Roadmaps: NextPage = () => {
+const RoadmapsPage: NextPage = () => {
   return <Layout>
-    Roadmaps
+    <Roadmaps />
   </Layout>;
 };
 
-export default Roadmaps;
+export default RoadmapsPage;

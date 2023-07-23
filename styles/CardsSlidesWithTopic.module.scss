@@ -1,0 +1,34 @@
+@import "./common/_color.module.scss";
+
+.mainDiv{
+    width: 100%;
+    min-height: 400px;
+    padding: 3%;
+   // background-color: #eeee;
+}
+
+.h2Tag{
+    font-size: 2.5rem;
+    color: $primaryTextColor;
+    font-weight: 500;
+}
+
+.cardMainDiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    // width: 100%;
+  }
+
+  .arrowDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }

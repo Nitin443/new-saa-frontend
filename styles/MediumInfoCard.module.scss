@@ -1,16 +1,10 @@
 @import "./common/_color.module.scss";
 
-.mainDiv{
-    width: 100%;
-    min-height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .cardStyle{
     border-color: #eeee;
     border-width: 1.5px;
+    margin: 20px;
 }
 
 .rateNum{
@@ -35,3 +29,9 @@
 .tagStyle{
     list-style: circle;
 }
+
+@media (max-width: 600px) {
+    .cardStyle {
+      width: calc(50% - 20px); /* 50% minus the margin to fit 2 cards in a row */
+    }
+  }

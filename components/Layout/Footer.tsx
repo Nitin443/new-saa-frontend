@@ -130,7 +130,7 @@ const Footer: React.FC<Props> = ({}) => {
         </div>
       </div>
 
-     <div className={styles.bottomDiv} > Copyright &#169;  {new Date().getFullYear()} & All Rights Reserved by <span className={styles.tpsowName} > Tpsow Intech Pvt Ltd </span>  </div>
+     <div className={styles.bottomDiv} > Copyright &#169;  {new Date().getFullYear()} & All Rights Reserved by {' '} <span className={styles.tpsowName} > Tpsow Intech Pvt Ltd </span>  </div>
 
     </div>
   );

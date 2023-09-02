@@ -1,5 +1,6 @@
 import styles from "../../styles/TopBanner.module.scss";
-import { Button, Image } from "antd";
+import { Image } from "antd";
+import SaaButton from "../Custom/SaaButton";
 
 interface Props extends React.PropsWithChildren<any> {
   title?: string;
@@ -35,9 +36,9 @@ const TopBanner: React.FC<Props> = ({
 
         {showBtn ? (
           <div className={styles.btnDiv}>
-            <Button className={styles.btn}>Join us </Button>
+            <SaaButton className={styles.btn}>Join us </SaaButton>
 
-            <Button className={styles.btnStyle}>Explore more </Button>
+            <SaaButton className={styles.btnStyle}>Explore more </SaaButton>
           </div>
         ) : (
           ""

@@ -1,3 +1,16 @@
-.mainBtnDiv{
-    border-radius: 5px;
-}
+@import "./common/_color.module.scss";
+
+.button {
+    background-color: $primaryBtnColor;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 5px 0 0;
+  }
+  
+  .button:hover {
+    opacity: 0.7;
+  }

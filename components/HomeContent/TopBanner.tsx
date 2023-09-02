@@ -36,9 +36,9 @@ const TopBanner: React.FC<Props> = ({
 
         {showBtn ? (
           <div className={styles.btnDiv}>
-            <SaaButton className={styles.btn}>Join us </SaaButton>
+            <SaaButton style={{backgroundColor: '#595959'}}>Join us </SaaButton>
 
-            <SaaButton className={styles.btnStyle}>Explore more </SaaButton>
+            <SaaButton style={{backgroundColor: '#eeee', color: 'black'}}>Explore more </SaaButton>
           </div>
         ) : (
           ""

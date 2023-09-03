@@ -14,41 +14,36 @@ interface Props extends React.PropsWithChildren<any> {
 
 const MediumInfoCard: React.FC<Props> = ({}) => {
   return (
-      <Card
-        hoverable={true}
-        className={styles.cardStyle}
-        bordered={true}
-        cover={
-          <img
-            alt="example"
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/8a/f7f459f9674408947edb8e594a5da3/1200x600_PgM.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50"
-            height={225}
-          />
-        }
-      >
-        <Meta
-          title="Google project management"
-          description="skills you'll gain: Organizational Career, Culture, Development 
-            Strategic, Thinking, Chnage..."
+    <Card
+      hoverable={true}
+      className={styles.cardStyle}
+     // bordered={true}
+      cover={
+        <img
+          alt="example"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/8a/f7f459f9674408947edb8e594a5da3/1200x600_PgM.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50"
+          height={225}
         />
+      }
+    >
+      <Meta
+        title="Google project management"
+        description="skills you'll gain: Organizational Career, Culture, Development 
+            Strategic, Thinking, Chnage..."
+      />
 
-        <div className={styles.ratingDiv}>
-          <span className={styles.rateNum}> 4.8 </span>
+      <div className={styles.ratingDiv}>
+        <span className={styles.rateNum}> 4.8 </span>
 
-          <Rate
-            className={styles.ratingStyle}
-            allowClear={false}
-            defaultValue={1}
-            count={1}
-          />
+        <span className={styles.ratingStyle}>★</span>
 
-          <span className={styles.reviewStyle} > (83.7k reviews) </span>
-        </div>
+        <span className={styles.reviewStyle}> (83.7k reviews) </span>
+      </div>
 
-        <div>
-          <Tag>Beginner</Tag> <Tag>Professional</Tag> <Tag>6 month</Tag>
-        </div>
-      </Card>
+      <div>
+        <Tag className={styles.tags} >Beginner</Tag> <Tag>Professional</Tag> <Tag>6 month</Tag>
+      </div>
+    </Card>
   );
 };
 

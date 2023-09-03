@@ -9,6 +9,7 @@
     border-color: #eeee;
     border-width: 1.5px;
     margin: 20px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .rateNum{
@@ -32,5 +33,11 @@
 
 .tagStyle{
     list-style: circle;
+}
+
+.tags{
+    border: 1px solid #eeee;
+    border-radius: 5px;
+    background-color: azure;
 }
 

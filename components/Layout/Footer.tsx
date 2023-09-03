@@ -113,7 +113,7 @@ const Footer: React.FC<Props> = ({}) => {
 
           <div className={styles.searchDiv}>
             <Search
-              placeholder="input search text"
+              placeholder="abc@example.com"
               allowClear
               enterButton="Subscribe"
               size="large"

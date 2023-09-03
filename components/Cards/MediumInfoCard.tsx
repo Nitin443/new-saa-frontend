@@ -41,7 +41,7 @@ const MediumInfoCard: React.FC<Props> = ({}) => {
       </div>
 
       <div>
-        <Tag className={styles.tags} >Beginner</Tag> <Tag>Professional</Tag> <Tag>6 month</Tag>
+        <Tag className={styles.tags} >Beginner</Tag> <Tag className={styles.tags} >Professional</Tag> <Tag className={styles.tags} >6 month</Tag>
       </div>
     </Card>
   );

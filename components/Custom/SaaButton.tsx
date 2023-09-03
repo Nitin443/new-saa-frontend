@@ -1,7 +1,6 @@
 import { Button, Spin } from "antd";
 import styles from "../../styles/SaaButton.module.scss";
 import { CSSProperties } from "react";
-import { LoadingOutlined } from "@ant-design/icons";
 
 interface Props extends React.PropsWithChildren<any> {
   styleClass?: any;
@@ -22,8 +21,6 @@ const SaaButton: React.FC<Props> = ({
   loading,
 }) => {
 
-  const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />
-
   return (
     <button
       id={id}
@@ -33,7 +30,7 @@ const SaaButton: React.FC<Props> = ({
       
       className={`${styleClass} ${styles.button}`}
     >
-      {loading ? <Spin indicator={antIcon} /> : children}
+      {loading ? <Spin  /> : children}
     </button>
   );
 };

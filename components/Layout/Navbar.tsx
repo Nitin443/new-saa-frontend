@@ -1,4 +1,4 @@
-import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
+import {  CloseOutlined, MenuOutlined } from "@ant-design/icons";
 import { Image } from "antd";
 import { useState } from "react";
 import styles from "../../styles/Navbar.module.scss";
@@ -66,7 +66,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className={styles.mobileMenu} onClick={handleClick}>
-        {click ? <CloseOutlined /> : <MenuOutlined />}
+        {click ? 'X' : '☰'}
       </div>
     </div>
   );

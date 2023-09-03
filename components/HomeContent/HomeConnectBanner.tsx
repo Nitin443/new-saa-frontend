@@ -1,5 +1,6 @@
 import styles from "../../styles/HomeConnectBanner.module.scss";
 import { Button, Image } from "antd";
+import SaaButton from "../Custom/SaaButton";
 
 interface Props extends React.PropsWithChildren<any> {}
 
@@ -16,7 +17,7 @@ const HomeConnectBanner: React.FC<Props> = ({}) => {
         </p>
 
         <div className={styles.btnDiv}>
-          <Button className={styles.btn}>Connect </Button>
+        <SaaButton style={{backgroundColor: '#595959'}}>Connect </SaaButton>
 
          
         </div>

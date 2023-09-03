@@ -1,5 +1,6 @@
 import styles from "../../styles/HomeRoadmapsBanner.module.scss";
 import { Button, Image } from "antd";
+import SaaButton from "../Custom/SaaButton";
 
 interface Props extends React.PropsWithChildren<any> {}
 
@@ -27,7 +28,7 @@ const HomeRoadmapsBanner: React.FC<Props> = ({}) => {
         </p>
 
         <div className={styles.btnDiv}>
-          <Button className={styles.btn}>Explore Roadmaps </Button>
+        <SaaButton style={{backgroundColor: '#595959'}}>Explore Roadmaps </SaaButton>
         </div>
       </div>
     </div>

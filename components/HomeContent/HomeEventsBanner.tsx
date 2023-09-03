@@ -1,6 +1,7 @@
 import styles from "../../styles/HomeEventsBanner.module.scss";
 import { Button, Image } from "antd";
 import eventImage from "../../assets/images/event.png"
+import SaaButton from "../Custom/SaaButton";
 
 interface Props extends React.PropsWithChildren<any> {}
 
@@ -28,7 +29,7 @@ const HomeEventsBanner: React.FC<Props> = ({}) => {
         </p>
 
         <div className={styles.btnDiv}>
-          <Button className={styles.btn}>Join Events </Button>
+        <SaaButton style={{backgroundColor: '#595959'}}>Join Events </SaaButton>
 
           
         </div>

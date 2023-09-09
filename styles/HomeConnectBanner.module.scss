@@ -2,7 +2,8 @@
 
 .mainDiv {
   width: 100%;
-  min-height: 200px;
+  min-height: 500px;
+  height: 100%;
   background-color: $secondryBgColor;
   display: flex;
   justify-content: center;
@@ -24,12 +25,12 @@
 
 .pTag {
   color: $primaryTextColor;
-  margin-top: 20px;
+ // margin-top: 20px;
   font-size: 1.5em;
 }
 
 .btn {
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: $terceryBtnColor;
   border-style: none;
   min-height: 50px;
@@ -39,7 +40,7 @@
 }
 
 .btnStyle {
-  margin-top: 20px;
+ // margin-top: 20px;
   min-height: 50px;
   font-size: 1em;
   margin-right: 20px;

@@ -10,8 +10,9 @@ const HomeRoadmapsBanner: React.FC<Props> = ({}) => {
         <Image
           preview={false}
           alt="banner image"
-          width={400}
-          height={400}
+          width={500}
+        height={300}
+        style={{borderRadius: '7px'}}
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFhJMcSN9TfGxb3ZrkEbDNkoM7jWDVlEXEg&usqp=CAU"
         />
       </div>

@@ -24,6 +24,7 @@ const Navbar = () => {
       </div>
 
       <ul
+      style={{marginBottom: 0}}
         className={
           click
             ? `${styles.navOptions} ${styles.active}`
@@ -55,7 +56,9 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <ul className={styles.signinUp}>
+      <ul 
+        style={{marginBottom: 0}}
+       className={styles.signinUp}>
         <li className={styles.signIn} onClick={closeMobileMenu}>
           <Link href="#">SIGN-IN</Link>
         </li>

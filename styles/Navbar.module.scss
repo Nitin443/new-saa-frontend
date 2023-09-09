@@ -40,7 +40,11 @@
   display: none;
 }
 
-.option :hover {
+.opColor {
+  color: $primaryTextColor;
+}
+
+.opColor:hover {
   color: $terceryTextColor;
 }
 

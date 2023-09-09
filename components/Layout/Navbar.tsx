@@ -30,26 +30,26 @@ const Navbar = () => {
             : `${styles.navOptions}`
         }
       >
-        <li className={styles.option} onClick={closeMobileMenu}>
-          <Link href="/events">EVENTS</Link>
+        <li  className={styles.option} onClick={closeMobileMenu}>
+          <Link className={styles.opColor} href="/events">EVENTS</Link>
         </li>
         <li className={styles.option} onClick={closeMobileMenu}>
-          <Link href="/connect">CONNECT</Link>
+          <Link className={styles.opColor} href="/connect">CONNECT</Link>
         </li>
         <li className={styles.option} onClick={closeMobileMenu}>
-          <Link href="/roadmaps">ROADMAPS</Link>
+          <Link className={styles.opColor} href="/roadmaps">ROADMAPS</Link>
         </li>
         <li
           className={`${styles.option} ${styles.mobileOption}`}
           onClick={closeMobileMenu}
         >
-          <Link href="#">SIGN-IN</Link>
+          <Link className={styles.opColor} href="#">SIGN-IN</Link>
         </li>
         <li
           className={`${styles.option} ${styles.mobileOption}`}
           onClick={closeMobileMenu}
         >
-          <Link href="" className="sign-up">
+          <Link className={styles.opColor} href="" >
             SIGN-UP
           </Link>
         </li>

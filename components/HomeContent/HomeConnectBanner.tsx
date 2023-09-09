@@ -1,3 +1,4 @@
+import router from "next/router";
 import styles from "../../styles/HomeConnectBanner.module.scss";
 import { Button, Image } from "antd";
 
@@ -16,7 +17,7 @@ const HomeConnectBanner: React.FC<Props> = ({}) => {
         </p>
 
         <div className={styles.btnDiv}>
-          <Button className={styles.btn}>Connect </Button>
+          <Button onClick={() => { router.push('/connect') }} className={styles.btn}>Connect </Button>
 
          
         </div>

@@ -1,3 +1,4 @@
+import router from "next/router";
 import styles from "../../styles/HomeRoadmapsBanner.module.scss";
 import { Button, Image } from "antd";
 
@@ -28,7 +29,7 @@ const HomeRoadmapsBanner: React.FC<Props> = ({}) => {
         </p>
 
         <div className={styles.btnDiv}>
-          <Button className={styles.btn}>Explore Roadmaps </Button>
+          <Button onClick={() => { router.push('/roadmaps') }} className={styles.btn}>Explore Roadmaps </Button>
         </div>
       </div>
     </div>

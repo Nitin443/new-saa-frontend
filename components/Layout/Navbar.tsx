@@ -66,7 +66,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className={styles.mobileMenu} onClick={handleClick}>
-        {click ? <CloseOutlined /> : <MenuOutlined />}
+        {click ? <CloseOutlined rev={undefined} /> : <MenuOutlined rev={undefined} />}
       </div>
     </div>
   );

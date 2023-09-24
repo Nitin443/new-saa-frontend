@@ -10,7 +10,7 @@
 }
 
 .rsTopMainDiv {
-  width: 50%;
+  width: 65%;
   text-align: center;
   padding: 1.2rem 0;
 }
@@ -25,8 +25,7 @@
 
 .rsSelectionDiv {
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  justify-content:center;
 }
 
 .rsLabel {
@@ -42,7 +41,54 @@
   width: 100%;
 }
 
+.rsSelectMainDiv{
+  margin-right: 1rem;
+}
+
 .rsBtnDiv {
   display: flex;
   align-items: flex-end;
+}
+
+
+/*
+* media query
+*/
+
+@media screen and (max-width: 1024px) {
+
+  .rsTopMainDiv {
+    width: 90%;
+    
+  }
+    
+}
+
+@media screen and (max-width: 624px) {
+
+  .rsMainDiv{
+    text-align: left;
+    padding: 4rem 15px 4rem 15px;
+  }
+  
+  .rsTopMainDiv {
+    width: 100%;
+    
+  }
+
+  .rsSelectionDiv {
+    flex-direction: column;
+  }
+
+  .rsSelectMainDiv{
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .rsSelectDiv {
+    width: 95vw;
+  }
+
+
+
 }

@@ -19,7 +19,7 @@ const RoadmapsSelection: React.FC<Props> = ({}) => {
       </div>
 
       <div className={styles.rsSelectionDiv}>
-        <div>
+        <div className={styles.rsSelectMainDiv} >
           <label className={styles.rsLabel} >Select Course, Field type</label>
 
           <Select
@@ -34,7 +34,7 @@ const RoadmapsSelection: React.FC<Props> = ({}) => {
           />
         </div>
 
-        <div>
+        <div className={styles.rsSelectMainDiv} >
           <label className={styles.rsLabel} >Select Course branch, Field speciliazation</label>
 
           <Select

@@ -1,4 +1,3 @@
-import styles from "../../styles/RoadmapsView.module.scss";
 import RoadmapsInfo from "./RoadmapInfo";
 import RoadmapsSelection from "./RoadmapsSelection";
 

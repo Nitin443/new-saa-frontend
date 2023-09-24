@@ -1,23 +1,48 @@
 @import "./common/_color.module.scss";
 
-.rsMainDiv{
-    padding: 4rem 20px 4rem 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.rsMainDiv {
+  padding: 4rem 20px 4rem 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.rsTopMainDiv{
-    width: 50%;
-    text-align: center;
-    padding: 1.2rem 0;
+.rsTopMainDiv {
+  width: 50%;
+  text-align: center;
+  padding: 1.2rem 0;
 }
 
-.rsH1Tag{
-color: $sixthTextColor;
+.rsH1Tag {
+  color: $sixthTextColor;
 }
 
-.rsPtag{
-color: $fourthTextColor;
+.rsPtag {
+  color: $fourthTextColor;
+}
+
+.rsSelectionDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.rsLabel {
+  padding-top: 1rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1em;
+  font-weight: 500;
+  color: $fourthTextColor;
+}
+
+.rsSelectDiv {
+  width: 100%;
+}
+
+.rsBtnDiv {
+  display: flex;
+  align-items: flex-end;
 }

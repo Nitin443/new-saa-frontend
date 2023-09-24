@@ -1,0 +1,23 @@
+@import "./common/_color.module.scss";
+
+.rsMainDiv{
+    padding: 4rem 20px 4rem 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rsTopMainDiv{
+    width: 50%;
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+.rsH1Tag{
+color: $sixthTextColor;
+}
+
+.rsPtag{
+color: $fourthTextColor;
+}

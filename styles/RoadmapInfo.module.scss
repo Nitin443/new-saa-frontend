@@ -1,0 +1,55 @@
+@import "./common/_color.module.scss";
+
+.riMainDiv {
+  padding: 4rem 20px 4rem 20px;
+  background-color: $secondryBgColor;
+  text-align: center;
+}
+
+.riSubDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.riLeftDiv {
+  min-width: 16rem;
+  width: 100%;
+  max-width: 20%;
+  border-radius: 6px;
+  background-color: $forthBgColor;
+}
+
+.riRightDiv {
+  width: 60%;
+  background-color: $forthBgColor;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.textStyle {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #eeeeee;
+  padding: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.textStyle:hover {
+  color: #607df9;
+}
+
+.iconStyle {
+  margin-right: 10px;
+}
+
+.titleDiv {
+  border-bottom: 1px solid #eeeeee;
+  padding: 1rem 0 0.5rem 0.5rem;
+}
+
+.contentDiv{
+    padding:0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}

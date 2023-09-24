@@ -24,12 +24,15 @@ const RoadmapsSelection: React.FC<Props> = ({}) => {
 
           <Select
            className={styles.rsSelectDiv}
-            defaultValue="lucy"
+            defaultValue="MCA"
             options={[
-              { value: "jack", label: "Jack" },
-              { value: "lucy", label: "Lucy" },
-              { value: "Yiminghe", label: "yiminghe" },
-              { value: "disabled", label: "Disabled", disabled: true },
+              { value: "MCA", label: "MCA" },
+              { value: "MBA", label: "MBA" },
+              { value: "B.Tech", label: "B.Tech" },
+              { value: "BCA", label: "BCA" },
+              { value: "IT", label: "Information Technology", },
+              { value: "Astronaut", label: "Astronaut", },
+              { value: "BC", label: "Business Consultant", },
             ]}
           />
         </div>
@@ -39,12 +42,9 @@ const RoadmapsSelection: React.FC<Props> = ({}) => {
 
           <Select
            className={styles.rsSelectDiv}
-            defaultValue="lucy"
+            defaultValue="Computer Application"
             options={[
-              { value: "jack", label: "Jack" },
-              { value: "lucy", label: "Lucy" },
-              { value: "Yiminghe", label: "yiminghe" },
-              { value: "disabled", label: "Disabled", disabled: true },
+              { value: "Computer Application", label: "Computer Application" },
             ]}
           />
         </div>

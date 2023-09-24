@@ -48,21 +48,40 @@
   padding: 1rem 0 0.5rem 0.5rem;
 }
 
-.contentDiv{
-    padding:0.5rem;
-    font-size: 1.1rem;
-    line-height: 1.4;
+.contentDiv {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
 }
-
 
 /*
 * media query
 */
 
 @media screen and (max-width: 1024px) {
-    
+  .riMainDiv {
+    padding: 4rem 10px 4rem 10px;
   }
 
-  @media screen and (max-width: 624px) {
-    
+  .riRightDiv {
+    width: 70%;
+    margin-left: 10px;
   }
+}
+
+@media screen and (max-width: 624px) {
+  .riSubDiv {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .riLeftDiv {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .riRightDiv {
+    width: 100%;
+    margin-left: 0px;
+  }
+}

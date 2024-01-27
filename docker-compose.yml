@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   saafrontend:
-    image: saafrontend
+    image: nitinsaa1999/saafrontend:0.0.1
     build:
       context: .
       dockerfile: ./Dockerfile
